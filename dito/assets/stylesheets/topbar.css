@@ -6,6 +6,7 @@
 #dito-topbar * {
   line-height: inherit;
   font-family: inherit;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content {
@@ -39,6 +40,7 @@
   opacity: 0.3;
   line-height: 1;
   transition: opacity 0.4s;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-logo a:hover {
@@ -52,16 +54,19 @@
   display: inline-block;
   position: relative;
   top: 6px;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-signed-out {
   display: none;
   text-align: center;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-signed-in {
   display: none;
   text-align: left;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-user-picture {
@@ -77,6 +82,7 @@
   background-repeat: no-repeat;
   background-size: 32px 32px;
   overflow: hidden;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-user-picture img {
@@ -85,10 +91,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-user-greeting {
   display: inline-block;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-user-logout {
@@ -97,6 +105,7 @@
   position: relative;
   top: -1px;
   margin-left: 5px;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-close {
@@ -114,6 +123,7 @@
   opacity: 0.5;
   cursor: pointer;
   display: none;
+  vertical-align: middle;
 }
 
 #dito-topbar #dito-topbar-content #dito-topbar-login-button {
@@ -129,6 +139,7 @@
   top: -1px;
   transition: all 0.3s;
   text-shadow: 0 1px 0px rgba(0,0,0, 0.2);
+  vertical-align: middle;
 }
 #dito-topbar #dito-topbar-content #dito-topbar-login-button:hover {
   border-color: rgba(0,0,0, 0.6);
