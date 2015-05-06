@@ -1,0 +1,313 @@
+#dito-topbar {
+  line-height: 1;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+#dito-topbar * {
+  line-height: inherit;
+  font-family: inherit;
+}
+
+#dito-topbar #dito-topbar-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-content-wrapper {
+  padding: 0 70px 0 20px;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 97%, rgba(0,0,0,0.2) 99%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(97%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 97%,rgba(0,0,0,0.2) 99%,rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 97%,rgba(0,0,0,0.2) 99%,rgba(0,0,0,0.2) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 97%,rgba(0,0,0,0.2) 99%,rgba(0,0,0,0.2) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 97%,rgba(0,0,0,0.2) 99%,rgba(0,0,0,0.2) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-9 */
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-logo a {
+  background: none;
+  padding: 0;
+  margin: -12px 0 0 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  opacity: 0.3;
+  line-height: 1;
+  transition: opacity 0.4s;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-logo a:hover {
+  opacity: 0.8;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-arrow-right {
+  opacity: 0.1;
+  font-size: 30px;
+  margin: -5px 15px 0 10px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-signed-out {
+  display: none;
+  text-align: center;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-signed-in {
+  display: none;
+  text-align: left;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-user-picture {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+  border: 3px rgba(255, 255, 255, 0.3) solid;
+  margin-right: 7px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  overflow: hidden;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-user-picture img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-user-greeting {
+  display: inline-block;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-user-logout {
+  font-size: 13px;
+  text-transform: lowercase;
+  position: relative;
+  top: -1px;
+  margin-left: 5px;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #fff;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-top: -15px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: inherit;
+  opacity: 0.5;
+  cursor: pointer;
+  display: none;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-login-button {
+  background: #DDD;
+  border: 1px rgba(0,0,0, 0.3) solid;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  line-height: 32px;
+  font-size: 13px;
+  padding: 0 20px;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  transition: all 0.3s;
+  text-shadow: 0 1px 0px rgba(0,0,0, 0.2);
+}
+#dito-topbar #dito-topbar-content #dito-topbar-login-button:hover {
+  border-color: rgba(0,0,0, 0.6);
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-login-button:before {
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../images/user-icon.png) no-repeat;
+  background-size: 15px 16px;
+  margin: 0 10px 0 -5px;
+  position: relative;
+  top: 3px;
+  opacity: 0.3;
+}
+
+#dito-topbar #dito-topbar-content #dito-topbar-close:hover {
+  opacity: 1;
+}
+
+#dito-topbar #dito-topbar-login {
+
+}
+#dito-topbar #dito-topbar-login.dito-hide {
+  display: none;
+  opacity: 0;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(237, 237, 237, 0.8);
+  z-index: 999999;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content {
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 999999;
+  box-shadow: 1px 0 0 #DDD, -1px 0 0 #DDD, 0 2px #CCC, 0 -1px #DDD;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: -200px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-title {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0 0 30px;
+  color: #353535;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content button {
+  border: none;
+  height: 50px;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 16px;
+  width: 100%;
+  color: #FFF;
+  font-weight: bold;
+  border: 1px #CCC solid;
+  border-bottom-width: 2px;
+  transition: all .3s;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 24px 24px;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content .dito-login-button + .dito-login-button {
+  margin-top: 10px;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-facebook button {
+  background-color: #3B5998;
+  border-color: #1B3E6B;
+  background-image: url(../images/topbar-facebook-icon.png);
+}
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-facebook button:hover {
+  background-color: #275A9B;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-google button {
+  background-color: rgb(221, 54, 54);
+  border-color: rgb(137, 21, 21);
+  background-image: url(../images/topbar-google-icon.png);
+}
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-google button:hover {
+  background-color: rgb(194, 46, 46);
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-warning {
+  margin: 30px -40px -40px;
+  padding: 20px 40px;
+  background: #fcfcfc;
+  border-radius: 0 0 5px 5px;
+  font-size: 13px;
+  color: #777;
+  box-shadow: inset 0 1px #DDD;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-close:hover {
+  opacity: 0.6;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-dito-logo a {
+  background: none;
+  padding: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  opacity: 0.2;
+  margin-left: -18px;
+  transition: opacity 0.3s;
+}
+
+#dito-topbar #dito-topbar-login #dito-topbar-login-content #dito-topbar-login-dito-logo a:hover {
+  opacity: 0.4;
+}
+
+
+@media (max-width: 680px) {
+  #dito-topbar #dito-topbar-content {
+    line-height: 1.2;
+  }
+
+  #dito-topbar #dito-topbar-content #dito-topbar-arrow-right {
+    display: none;
+  }
+
+  #dito-topbar #dito-topbar-content #dito-topbar-logo {
+    display: none;
+  }
+
+  #dito-topbar #dito-topbar-content #dito-topbar-content-wrapper {
+    padding: 20px;
+  }
+
+  #dito-topbar #dito-topbar-content  #dito-topbar-text {
+  }
+
+  #dito-topbar #dito-topbar-content #dito-topbar-login-button {
+    width: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    margin-top: 15px
+  }
+
+  #dito-topbar #dito-topbar-content #dito-topbar-user-picture {
+    margin-top: -17px;
+  }
+
+  /* Modal */
+
+  #dito-topbar #dito-topbar-login #dito-topbar-login-content {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
