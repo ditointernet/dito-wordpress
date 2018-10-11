@@ -1,0 +1,344 @@
+/* 26.2 Notification block's color */
+.notification-block.notif-success {
+	background: #E1F0D7;
+	border: 1px solid #BBC6AE;
+}
+.notification-block.notif-success .icon,
+.notification-block.notif-success p {
+	color: #447639;
+}
+.notification-block.notif-error {
+	background: #F0DEDE;
+	border: 1px solid #CEA7AE;
+}
+.notification-block.notif-error .icon,
+.notification-block.notif-error p {
+	color: #A34440;
+}
+.notification-block.notif-alert {
+	background: #FCF8E2;
+	border: 1px solid #D1C3A2;
+}
+.notification-block.notif-alert .icon,
+.notification-block.notif-alert p {
+	color: #886D36;
+}
+.notification-block.notif-info {
+	background: #DBEDF8;
+	border: 1px solid #94C9DA;
+}
+.notification-block.notif-info .icon,
+.notification-block.notif-info p {
+	color: #3B7094;
+}
+
+/**
+* -------------------------------------------------
+* 19.0 Subscribe Block
+* -------------------------------------------------
+**/
+.subscribe-form,
+.subscribe-block {
+	position: relative;
+	display: block;
+}
+.subscribe-block .overlay {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.subscribe-block .subscribe-container.grid-1,
+.subscribe-block .subscribe-container.grid-2 {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 28px 15px 30px 15px;
+	border: 1px solid #E1E1E1;
+}
+.subscribe-block .subscribe-container.grid-1 {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 35px 15px 42px 15px;
+}
+.subscribe-block .subscribe-container.grid-2 > div:not( .overlay ) {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 2;
+}
+.subscribe-block .subscribe-container.grid-1 > div:not( .overlay ) {
+	position: relative;
+	display: block;
+	z-index: 2;
+}
+.subscribe-block .subscribe-container.grid-1 .text-container,
+.subscribe-block .subscribe-container.grid-1 .subscribe-form-container {
+	padding: 0 15px;
+}
+.subscribe-block .subscribe-container.grid-2 .text-container {
+	float: none;
+	width: 50%;
+	padding: 0 15px;
+}
+.subscribe-block .subscribe-container.grid-2 .subscribe-form-container {
+	width: 50%;
+	padding: 30px 15px;
+}
+.single-page .outer-container .subscribe-container .text-container {
+	padding: 0 15px;
+}
+.subscribe-block .subscribe-container .subscribe-title {
+	position: relative;
+	display: block;
+}
+.subscribe-block .subscribe-container.grid-1 p {
+	margin-top: 15px;
+}
+.subscribe-block .subscribe-container.grid-2 p {
+	margin-top: 10px;
+}
+.subscribe-block .subscribe-container.grid-1 .subscribe-form-container .subscribe-form {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+}
+.subscribe-block .subscribe-container.grid-2 .subscribe-form-container .subscribe-form {
+	position: relative;
+}
+.subscribe-block .line {
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 3px;
+	background: #f2f2f2;
+	margin-top: 23px;
+}
+.subscribe-block .line::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 0;
+	width: 40px;
+	height: 100%;
+}
+.subscribe-block .form-label {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 20px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 800;
+	letter-spacing: 2px;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #262626;
+	width: auto;
+	z-index: -1;
+	-webkit-transform: translateY( 0 );
+	   -moz-transform: translateY( 0 );
+	    -ms-transform: translateY( 0 );
+	     -o-transform: translateY( 0 );
+	        transform: translateY( 0 );
+}
+.subscribe-block .subscribe-form.align-center .form-label,
+.page-404-content .search-form .form-label {
+	left: 50%;
+	-webkit-transform: translate( -50%, 0 );
+	   -moz-transform: translate( -50%, 0 );
+	    -ms-transform: translate( -50%, 0 );
+	     -o-transform: translate( -50%, 0 );
+	        transform: translate( -50%, 0 );
+}
+.subscribe-block .form-label.is-focus {
+	-webkit-transform: translateY( -45px );
+	   -moz-transform: translateY( -45px );
+	    -ms-transform: translateY( -45px );
+	     -o-transform: translateY( -45px );
+	        transform: translateY( -45px );
+}
+.subscribe-block .subscribe-form.align-center .form-label.is-focus,
+.page-404-content .search-form .form-label.is-focus {
+	-webkit-transform: translate( -50%, -45px );
+	   -moz-transform: translate( -50%, -45px );
+	    -ms-transform: translate( -50%, -45px );
+	     -o-transform: translate( -50%, -45px );
+	        transform: translate( -50%, -45px );
+}
+.subscribe-block .button-subscribe {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: none;
+	margin-top: 30px;
+}
+.subscribe-block .subscribe-form.align-left .button-subscribe {
+	float: right;
+	margin-top: 20px;
+}
+.subscribe-block .form-notif-container {
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+.subscribe-block .form-notif-container.is-visible {
+	height: 98px;
+}
+.subscribe-block .form-notif {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	margin-top: 30px;
+	text-align: left;
+	visibility: hidden;
+	-webkit-transform: translateY( -100% );
+	   -moz-transform: translateY( -100% );
+	    -ms-transform: translateY( -100% );
+	     -o-transform: translateY( -100% );
+	        transform: translateY( -100% );
+}
+.subscribe-block .form-notif.is-visible {
+	visibility: visible;
+	-webkit-transform: translateY( 0 );
+	   -moz-transform: translateY( 0 );
+	    -ms-transform: translateY( 0 );
+	     -o-transform: translateY( 0 );
+	        transform: translateY( 0 );
+}
+.subscribe-block .form-notif .notification-block {
+	padding: 13px 15px;
+}
+.subscribe-block .subscribe-container .notification-block p {
+	margin: 0;
+	font-size: 12px;
+}
+
+/* 19.1 Subscribe block on small devices */
+@media all and (max-width: 600px) {
+	.subscribe-block .subscribe-container.grid-2,
+	.subscribe-block .subscribe-container.grid-2 > div:not( .overlay ) {
+		display: block;
+		float: left;
+	}
+	.subscribe-block .subscribe-container.grid-2 .text-container,
+	.subscribe-block .subscribe-container.grid-2 .subscribe-form-container {
+		width: 100%;
+	}
+	.subscribe-block .subscribe-container.grid-2 .subscribe-form-container {
+		padding: 30px 15px 6px 15px;
+	}
+	.subscribe-block .subscribe-container.grid-2 .subscribe-form-container {
+		margin-top: 22px;
+	}
+}
+@media all and (max-width: 400px) {
+	.subscribe-block .subscribe-form.align-center .form-label {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* 22.21 Mailchimp */
+.widget_dito_widget .widget-dito {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.widget_dito_widget .widget-dito .overlay {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.widget_dito_widget .widget-dito .content-container,
+.widget_dito_widget .widget-dito .subscribe-message-container {
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	z-index: 2;
+}
+.widget_dito_widget .widget-dito p {
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	line-height: 23px;
+}
+.widget_dito_widget .widget-dito .subscribe-message {
+	margin-top: 12px;
+}
+.widget_dito_widget .widget-dito.is-box .subscribe-message {
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+.widget_dito_widget .widget-dito.is-box {
+	margin-top: 11px;
+	text-align: center;
+	padding: 40px 25px 40px 25px;
+}
+.widget_dito_widget .widget-dito.is-box .widget-title::before {
+	left: 50%;
+	margin-left: -15px;
+	background: rgba( 100, 100, 100, 0.2 );
+}
+.widget_dito_widget .widget-dito.is-box .widget-title .title {
+	font-size: 16px;
+	letter-spacing: 3px;
+	line-height: 32px;
+}
+.widget_dito_widget .subscribe-block,
+.widget_dito_widget .subscribe-form-container,
+.widget_dito_widget .subscribe-form {
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+}
+.widget_dito_widget .subscribe-form {
+	margin-top: 20px;
+}
+.widget_dito_widget .subscribe-block {
+	margin-bottom: 13px;
+}
+.widget_dito_widget .widget-dito.no-box .subscribe-block {
+	margin-bottom: 5px;
+}
+.widget_dito_widget .widget-dito .subscribe-block {
+	margin-top: 15px;
+}
+.widget_dito_widget .subscribe-block .form-notif-container.is-visible {
+	height: 140px;
+}
+.widget_dito_widget .widget-dito.is-box label {
+	white-space: nowrap;
+}
+.widget_dito_widget .subscribe-form .button-subscribe {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+.widget_dito_widget .widget-dito.no-box .button-subscribe {
+	float: right;
+}
+
+@media all and (max-width: 1200px) {
+	.widget_dito_widget .subscribe-block .form-notif-container.is-visible {
+		height: 150px;
+	}
+}

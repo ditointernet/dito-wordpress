@@ -97,6 +97,7 @@ class Dito_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dito-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'jquery.validate.min', plugin_dir_url( __FILE__ ) . '../includes/widget/jquery.validate.min.js', array( 'jquery' ), $this->version, false );
 
 	}
 
