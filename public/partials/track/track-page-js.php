@@ -3,7 +3,7 @@
     action: 'acessou-pagina-blog',
     data: {
       pagina: '<?php echo get_the_title() ?>',
-      origem: '<?php echo $_POST['dito_track_canal_enabled'] ?>'
+      origem: '<?php echo $_REQUEST['dito_track_canal_enabled'] ?>'
     }
   });
 <?php } ?>
