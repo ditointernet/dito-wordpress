@@ -75,6 +75,10 @@
                 <input type="checkbox" name="dito_page_track_enabled" <?php if(get_option('dito_page_track_enabled')) echo "checked" ?> value="true" />
                 <strong>Acessos as páginas</strong>
               </td>
+              <td>
+                <strong>Canal de origem:</strong>
+                <input type="text" name="dito_track_canal_enabled" <?php if($_POST['dito_track_canal_enabled']!='') echo "checked" ?> />
+              </td>
             </tr>
           </table>
         </div><!-- .dito-settings-box -->

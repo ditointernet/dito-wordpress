@@ -12,6 +12,7 @@
       categorias: '<?php echo join(', ', $categories) ?>',
       author: '<?php echo get_the_author() ?>',
       data_publicacao: '<?php echo get_the_date('Y-m-d') ?>',
+      origem: '<?php echo $_POST['dito_track_canal_enabled'] ?>'
     }
   });
 <?php } ?>

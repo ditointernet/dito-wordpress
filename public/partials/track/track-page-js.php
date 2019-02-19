@@ -2,7 +2,8 @@
   dito.track({
     action: 'acessou-pagina-blog',
     data: {
-      pagina: '<?php echo get_the_title() ?>'
+      pagina: '<?php echo get_the_title() ?>',
+      origem: '<?php echo $_POST['dito_track_canal_enabled'] ?>'
     }
   });
 <?php } ?>
