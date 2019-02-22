@@ -1,6 +1,8 @@
-<?php if(is_home() && get_option("dito_home_track_enabled")){ ?>
+<?php if(is_home()){ ?>
   dito.track({
     action: 'acessou-home-blog',
-    origem: '<?php echo $_REQUEST['dito_track_canal_enabled'] ?>'
+    data: {
+      origem: '<?php echo get_option('dito_origin') ?>'
+    }
   });
 <?php } ?>

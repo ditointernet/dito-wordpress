@@ -77,7 +77,7 @@
               </td>
               <td>
                 <strong>Canal de origem:</strong>
-                <input type="text" name="dito_track_canal_enabled" <?php if($_REQUEST['dito_track_canal_enabled']) echo "checked" ?> />
+                <input type="text" name="dito_origin" value="<?php echo esc_attr( get_option('dito_origin') ); ?>" />
               </td>
             </tr>
           </table>
