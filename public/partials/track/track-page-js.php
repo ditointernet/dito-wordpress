@@ -3,9 +3,7 @@
     action: 'acessou-pagina-blog',
     data: {
       pagina: '<?php echo get_the_title() ?>',
-      data: {
-        origem: '<?php echo get_option('dito_origin') ?>'
-      }
+      origem: '<?php echo get_option('dito_origin') ?>'
     }
   });
 <?php } ?>
