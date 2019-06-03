@@ -25,8 +25,10 @@
         <div id="dito-settings-notes-title">Observações</div>
 
         <ul>
-          <li>Você precisa de um aplicativo criado na platforma da <strong>Dito</strong> para usar este plugin. Não possui um ainda? <a href="http://materiais.dito.com.br/plugin-wordpress" target="_blank">Crie agora o seu</a>.</li>
+          <li>Você precisa de um aplicativo criado na platforma da <strong>Dito</strong> para usar este plugin. Não possui um ainda? <a href="https://dito.com.br/" target="_blank">Fale com um consultor</a>.</li>
           <li>As informações e estatísticas dos eventos e usuários são visualizados na plataforma da <strong>Dito</strong>.</li>
+          <li>Para ajuda na configuração do plugin da Dito, acesse nossa <a href="http://developers.dito.com.br/docs/wordpress" target="_blank"> documentação.</a> </li>
+          <li>Ficou com alguma dúvida? Não se preocupe! Acesse nossa <a href="http://ajuda.dito.com.br/"> central de ajuda </a> para suporte.</li>
         </ul>
       </div><!-- #dito-settings-notes -->
 
@@ -45,7 +47,7 @@
                 <p class="dito-how-to">
                   <em>
                     Para conseguir sua <strong>API Key</strong>, acesse seu aplicativo na plataforma da Dito e vá em <strong>configurações</strong>.
-                    Veja um exemplo na imagem ao lado.
+                    Caso não consiga encontrar sua API Key, acesse <a href= "http://developers.dito.com.br/v1.0/docs/como-encontrar-sua-api-key-e-api-secret"> esse tutorial.</a>
                   </em>
                 </p>
               </td>
