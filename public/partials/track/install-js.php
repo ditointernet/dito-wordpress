@@ -18,6 +18,7 @@
         include ( 'track-home-js.php' );
         include ( 'track-post-js.php' );
         include ( 'track-page-js.php' );
+        include ( 'track-category-js.php' );
       ?>
     }
   </script>

@@ -145,8 +145,8 @@ class Dito_Admin {
   public function dito_tracking_settings() {
     $this->dito_register_setting('dito_home_track_enabled', true);
     $this->dito_register_setting('dito_post_track_enabled', true);
-		$this->dito_register_setting('dito_page_track_enabled', true);
-		$this->dito_register_setting('dito_origin');
+	$this->dito_register_setting('dito_page_track_enabled', true);
+	$this->dito_register_setting('dito_origin');
   }
 
   public function dito_reset_settings() {
@@ -154,6 +154,7 @@ class Dito_Admin {
     $this->delete_option('dito_home_track_enabled');
     $this->delete_option('dito_post_track_enabled');
 		$this->delete_option('dito_page_track_enabled');
+		$this->delete_option('dito_category_track_enabled');
 		$this->delete_option('dito_news_name_selector');
 		$this->delete_option('dito_news_email_selector');
 		$this->delete_option('dito_news_btn_selector');
